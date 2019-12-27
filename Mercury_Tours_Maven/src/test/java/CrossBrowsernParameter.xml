@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="test">
+  <test name="ChromeTest">
+  <parameter name="browsername" value="chrome"></parameter>
+  <parameter name="url" value="http://newtours.demoaut.com/index.php"></parameter>
+  <parameter name="uname" value="testing"></parameter>
+  <parameter name="upass" value="testing"></parameter>
+    <classes>
+      <class name="com.mercury.tours.maven.Parameter_Sign_On"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="IETest">
+  <parameter name="browsername" value="IE"></parameter>
+  <parameter name="url" value="http://newtours.demoaut.com/index.php"></parameter>
+  <parameter name="uname" value="dixit"></parameter>
+  <parameter name="upass" value="dixit"></parameter>
+    <classes>
+      <class name="com.mercury.tours.maven.Parameter_Sign_On_IE_Example"/>
+    </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
